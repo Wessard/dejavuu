@@ -148,3 +148,8 @@ window.addEventListener('DOMContentLoaded', function() {
   select.addEventListener('change', change);
   change()
 });
+
+
+Fancybox.bind("[data-fancybox]", {
+  // Your custom options
+});

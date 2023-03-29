@@ -178,7 +178,7 @@ var projects = false;
         /*****
          * Вывод IMG
          *****/
-        $('.mr_img').html(`<img src="${info.img}" alt="Изображение плана">`);
+        $('.mr_img').html(`<a href="${info.img}" data-fancybox="image"><img src="${info.img}" alt="Изображение плана"></a>`);
 
         /*****
          * Вывод аксции
