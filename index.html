@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/style/fonts.css">
+    <link rel="stylesheet" href="assets/style/scss/style.css">
+    <link rel="stylesheet" href="assets/style/scss/projects.css">
+    <link rel="stylesheet" href="assets/style/media.css">
+    <title>Dejavu</title>
+</head>
+
+<body>
+    <div class="zapis_modal">
+        <div class="zm_bg" onclick="$('body').removeClass('showZapis')"></div>
+        <div class="zapis_form">
+            <div class="innr_zf">
+                <div class="zf_krest" onclick="$('body').removeClass('showZapis')">
+                    <svg viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.646447 0.646447C0.841709 0.451184 1.15829 0.451184 1.35355 0.646447L4 3.29289L6.64645 0.646447C6.84171 0.451184 7.15829 0.451184 7.35355 0.646447C7.54882 0.841709 7.54882 1.15829 7.35355 1.35355L4.70711 4L7.35355 6.64645C7.54882 6.84171 7.54882 7.15829 7.35355 7.35355C7.15829 7.54882 6.84171 7.54882 6.64645 7.35355L4 4.70711L1.35355 7.35355C1.15829 7.54882 0.841709 7.54882 0.646447 7.35355C0.451184 7.15829 0.451184 6.84171 0.646447 6.64645L3.29289 4L0.646447 1.35355C0.451184 1.15829 0.451184 0.841709 0.646447 0.646447Z" fill="black" />
+                    </svg>
+                </div>
+                <div>
+                    
+                </div>
+                <form class="zf_form">
+                    <div class="zf_bol">
+                        <div class="zfh_title">
+                            Оставить заявку
+                        </div>
+                        <div class="zfh_title">
+                            Инвестируйте в перспективные проекты Дубая с нами и получайте высокую доходность! 
+                        </div>
+                        <div class="zf_group">
+                            <label for="fname">Фамилия</label>
+                            <input type="text" id="fname" placeholder="Введите фамилию" autocomplete="off">
+                        </div>
+                        <div class="zf_group">
+                            <label for="name">Имя</label>
+                            <input type="text" id="name" placeholder="Введите имя" autocomplete="off">
+                        </div>
+                        <div class="zf_btns">
+                            <div class="zf_btn" onclick="sendTel(this)">Отправить</div>
+                        </div>
+                    </div>
+                    <img src="assets/img/zayavka.png" alt="" class="zfs_img">
+                </form>
+            </div>
+        </div>
+    </div>
+    <header class="header" id="myHeader">
+        <div class="header_bx container">
+            <div class="header_burger">
+                <span></span>
+            </div>
+            <a href="">
+                <img src="assets/img/header-logo.png" alt="" class="header_bx_logo">
+            </a>
+            <a class="header_bx_price" href="">Ипотека 0%</a>
+            <ul class="header_bx_list">
+                <li class="bx_list_item"><a href="" class="bx_list_link">Проекты</a></li>
+                <li class="bx_list_item"><a href="" class="bx_list_link">Квартиры</a></li>
+                <li class="bx_list_item"><a href="" class="bx_list_link">Комерция</a></li>
+                <li class="bx_list_item"><a href="" class="bx_list_link">Дома</a></li>
+                <li class="bx_list_item"><a href="" class="bx_list_link">проекты</a></li>
+                <div class="header_lang" id="db">
+                    <img src="assets/img/russia.svg" alt="" class="header_lang_item">
+                    <img src="assets/img/united kingdom.svg" alt="" class="header_lang_item">
+                </div>
+            </ul>
+            <div class="header_lang">
+                <img src="assets/img/russia.svg" alt="" class="header_lang_item">
+                <img src="assets/img/united kingdom.svg" alt="" class="header_lang_item">
+            </div>
+            <a href="tel:+97143996487" class="header_phone">
+                <img class="phone_img" src="assets/img/phone.svg" alt="">
+                <div  class="header_phone_link">+971-4-3996487</div>
+            </a>
+            <div onclick="showZapis(this); " class="header_btn">Оставить Заявку</div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="slider">
+            <div class="swiper first_sw">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide sw_slide_bx">
+                        <div class="container slide_bx">
+                            <div class="slider_left">
+                                <h1 class="slider_left_title">Жилой комплекс <span>«dejavu»</span></h1>
+                                <p class="slider_left_desc">
+                                    Инвестируйте в перспективные проекты Дубая с нами и получайте высокую доходность!
+                                    Надежность
+                                    правовой системы, отсутствие налогов на доходы и высокий уровень жизни делают Дубай
+                                    одним из
+                                    самых привлекательных регионов для инвестирования.
+                                </p>
+                                <div>
+                                    <div class="slide_text">
+                                        <img src="assets/img/vector.svg" alt="">
+                                        <p class="slider_left_text">Надежность правовой системы и защита прав инвесторов
+                                        </p>
+                                    </div>
+                                    <div class="slide_text">
+                                        <img src="assets/img/vector.svg" alt="">
+                                        <p class="slider_left_text">Высокий уровень жизни и качества сервиса</p>
+                                    </div>
+                                    <div class="slide_text">
+                                        <img src="assets/img/vector.svg" alt="">
+                                        <p class="slider_left_text">Широкий выбор перспективных инвестиционных проектов
+                                        </p>
+                                    </div>
+                                    <div class="slide_text">
+                                        <img src="assets/img/vector.svg" alt="">
+                                        <p class="slider_left_text">Возможность получения высокой доходности и
+                                            расширения
+                                            инвестиционного портфеля.</p>
+                                    </div>
+                                </div>
+                                <div class="slider_left_btns">
+                                    <div onclick="showZapis(this)" class="slider_left_btn">Оставить Заявку</div>
+                                    <a href="" class="slider_left_btn sev">СКАЧАТЬ ПРЕЗЕНТАЦИЮ <span><img
+                                                class="sev_img" src="assets/img/download.svg" alt=""></span></a>
+                                </div>
+                            </div>
+                            <div class="slider_right">
+                                <img class="slider_right_img" src="assets/img/main-img.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide sw_slide_bx">
+                        <div class="container slide_bx">
+                            <div class="slider_left">
+                                <h1 class="slider_left_title">Жилой комплекс <span>«dejavu»</span></h1>
+                                <p class="slider_left_desc">
+                                    Инвестируйте в перспективные проекты Дубая с нами и получайте высокую доходность!
+                                    Надежность
+                                    правовой системы, отсутствие налогов на доходы и высокий уровень жизни делают Дубай
+                                    одним из
+                                    самых привлекательных регионов для инвестирования.
+                                </p>
+                                <div>
+                                    <div class="slide_text">
+                                        <img src="assets/img/vector.svg" alt="">
+                                        <p class="slider_left_text">Надежность правовой системы и защита прав инвесторов
+                                        </p>
+                                    </div>
+                                    <div class="slide_text">
+                                        <img src="assets/img/vector.svg" alt="">
+                                        <p class="slider_left_text">Высокий уровень жизни и качества сервиса</p>
+                                    </div>
+                                    <div class="slide_text">
+                                        <img src="assets/img/vector.svg" alt="">
+                                        <p class="slider_left_text">Широкий выбор перспективных инвестиционных проектов
+                                        </p>
+                                    </div>
+                                    <div class="slide_text">
+                                        <img src="assets/img/vector.svg" alt="">
+                                        <p class="slider_left_text">Возможность получения высокой доходности и
+                                            расширения
+                                            инвестиционного портфеля.</p>
+                                    </div>
+                                </div>
+                                <div class="slider_left_btns">
+                                    <a href="" class="slider_left_btn" onclick="showZapis(this)">Оставить Заявку</a>
+                                    <a href="" class="slider_left_btn sev">СКАЧАТЬ ПРЕЗЕНТАЦИЮ <span><img
+                                        class="sev_img" src="assets/img/download.svg" alt=""></span></a>
+                                </div>
+                            </div>
+                            <div class="slider_right">
+                                <img class="slider_right_img" src="assets/img/main-img2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide sw_slide_bx">
+                        <div class="container slide_bx">
+                            <div class="slider_left">
+                                <h1 class="slider_left_title">Жилой комплекс <span>«dejavu»</span></h1>
+                                <p class="slider_left_desc">
+                                    Инвестируйте в перспективные проекты Дубая с нами и получайте высокую доходность!
+                                    Надежность
+                                    правовой системы, отсутствие налогов на доходы и высокий уровень жизни делают Дубай
+                                    одним из
+                                    самых привлекательных регионов для инвестирования.
+                                </p>
+                                <div>
+                                    <div class="slide_text">
+                                        <img src="assets/img/vector.svg" alt="">
+                                        <p class="slider_left_text">Надежность правовой системы и защита прав инвесторов
+                                        </p>
+                                    </div>
+                                    <div class="slide_text">
+                                        <img src="assets/img/vector.svg" alt="">
+                                        <p class="slider_left_text">Высокий уровень жизни и качества сервиса</p>
+                                    </div>
+                                    <div class="slide_text">
+                                        <img src="assets/img/vector.svg" alt="">
+                                        <p class="slider_left_text">Широкий выбор перспективных инвестиционных проектов
+                                        </p>
+                                    </div>
+                                    <div class="slide_text">
+                                        <img src="assets/img/vector.svg" alt="">
+                                        <p class="slider_left_text">Возможность получения высокой доходности и
+                                            расширения
+                                            инвестиционного портфеля.</p>
+                                    </div>
+                                </div>
+                                <div class="slider_left_btns">
+                                    <a href="" class="slider_left_btn " onclick="showZapis(this)">Оставить Заявку</a>
+                                    <a href="" class="slider_left_btn sev">СКАЧАТЬ ПРЕЗЕНТАЦИЮ <span><img
+                                        class="sev_img" src="assets/img/download.svg" alt=""></span></a>
+                                </div>
+                            </div>
+                            <div class="slider_right">
+                                <img class="slider_right_img" src="assets/img/main-img3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sliders_ctrls">
+                    <div class="swiper-pagination slide_bx_pagi"></div>
+                    <div class="sliders_nav">
+                        <div class="swiper-button-prev sw_btn_sl"><svg viewBox="0 0 12 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.68104 8.99995L11.1089 14.785L9.10199 17.0149L0.1965 8.99995L9.10199 0.98501L11.1089 3.21489L4.68104 8.99995Z"
+                                    fill="#071C35" />
+                            </svg>
+                        </div>
+                        <div class="swiper-button-next sw_btn_sl"><svg viewBox="0 0 12 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.62438 9.00005L0.196533 3.21499L2.20343 0.985108L11.1089 9.00005L2.20342 17.015L0.196531 14.7851L6.62438 9.00005Z"
+                                    fill="#071C35" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="whywe">
+            <h2 class="whywe_title container">Почему в Дубаи ?</h2>
+            <div class="whywe_wrap container">
+                <div class="whywe_wrap_card">
+                    <div>
+                        <h3 class="whywe_wrap_card_title">Высокая оценка капитала</h3>
+                        <img class="whywe_wrap_card_img" src="assets/img/whywe1.svg" alt="">
+                    </div>
+                    <p class="whywe_wrap_card_desc">Последние отчеты Knight Frank показывают, что в апреле 2022 года
+                        стоимость элитного жилья в Дубае выросла на 59%.</p>
+                </div>
+                <div class="whywe_wrap_card">
+                    <div>
+                        <h3 class="whywe_wrap_card_title">Самая безопасная страна</h3>
+                        <img class="whywe_wrap_card_img" src="assets/img/whywe2.svg" alt="">
+                    </div>
+                    <p class="whywe_wrap_card_desc">В отчете Gallup Global Law and Order 2021 ОАЭ названы самой
+                        безопасной
+                        страной в мире.</p>
+                </div>
+                <div class="whywe_wrap_card">
+                    <div>
+                        <h3 class="whywe_wrap_card_title">Простота инвестиций</h3>
+                        <img class="whywe_wrap_card_img" src="assets/img/whywe3.svg" alt="">
+                    </div>
+                    <p class="whywe_wrap_card_desc">Регулирование и законы делают инвестирование в недвижимость в Дубае
+                        простым для инвесторов всех национальностей.</p>
+                </div>
+                <div class="whywe_wrap_card">
+                    <div>
+                        <h3 class="whywe_wrap_card_title">Высокий доход от аренды (8-10%)</h3>
+                        <img class="whywe_wrap_card_img" src="assets/img/whywe4.svg" alt="">
+                    </div>
+                    <p class="whywe_wrap_card_desc">С увеличением количества людей, которые путешествуют в Дубай в
+                        поисках
+                        лучшей жизни, ожидается рост арендных ставок жилых единиц.</p>
+                </div>
+                <div class="whywe_wrap_card">
+                    <div>
+                        <h3 class="whywe_wrap_card_title">Прогрессивная экономика</h3>
+                        <img class="whywe_wrap_card_img" src="assets/img/whywe5.svg" alt="">
+                    </div>
+                    <p class="whywe_wrap_card_desc">Самая быстрорастущая экономика в регионе Ближнего Востока и Северной
+                        Африки с ростом бизнеса, населения и спроса на жилье.</p>
+                </div>
+                <div class="whywe_wrap_card">
+                    <div>
+                        <h3 class="whywe_wrap_card_title">100% доход без налогов</h3>
+                        <img class="whywe_wrap_card_img" src="assets/img/whywe6.svg" alt="">
+                    </div>
+                    <p class="whywe_wrap_card_desc">Зарабатывайте безналоговую зарплату в Дубае как налоговый резидент
+                        без
+                        обязательств по налогу на иностранный доход</p>
+                </div>
+            </div>
+        </section>
+        <section class="offer container">
+            <div class="offer_wrap">
+                <h3 class="offer_wrap_title">Наше спец предложение</h3>
+                <p class="offer_wrap_desc">ИНВЕСТИРУЙТЕ В НЕДВИЖИМОСТЬ В ДУБАЕ И ПОЛУЧАЙТЕ ЗА ГОД 40%</p>
+                <div onclick="showZapis(this)" class="offer_wrap_link">Оставить заявку</div>
+                <img class="offer_wrap_img" src="assets/img/offer.svg" alt="">
+            </div>
+        </section>
+        <section class="projects">
+            <h2 class="projects_title container">Наши проекты</h2>
+            <div class="projects_bx container">
+                <img src="assets/img/projects-main.png" alt="" class="projects_img">
+                <span>Старт продаж</span>
+            </div>
+            <div class="prod_bx container">
+                <div class="pd_bx">
+                    <h3 class="prod_bx_title">Andres residences the bay</h3>
+                    <div class="prod_bx_wrap">
+                        <span class="prod_bx_wrap_span">10 минут до центра Дубая <img src="assets/img/prod-car.svg"
+                                alt=""></span>
+                        <span class="prod_bx_wrap_span">От 300.000$</span>
+                    </div>
+                </div>
+                <div class="prod_desc">
+                    <div class="desc_bx">
+                        <img src="assets/img/proj1.svg" alt="" class="desc_bx_img">
+                        <p class="desc_bx_text">Panoramic Views
+                            of the Sea & Marina</p>
+                    </div>
+                    <div class="desc_bx">
+                        <img src="assets/img/proj2.svg" alt="" class="desc_bx_img">
+                        <p class="desc_bx_text">Direct Access to
+                            Sheikh Zayed Road</p>
+                    </div>
+                    <div class="desc_bx">
+                        <img src="assets/img/proj3.svg" alt="" class="desc_bx_img">
+                        <p class="desc_bx_text">Nearby Licensed
+                            Restaurants</p>
+                    </div>
+                    <div class="desc_bx">
+                        <img src="assets/img/proj4.svg" alt="" class="desc_bx_img">
+                        <p class="desc_bx_text">Community
+                            Parks</p>
+                    </div>
+                </div>
+            </div>
+            <div class="projs_cont">
+                <div class="swiper projects_sw">
+                    <div class="swiper-wrapper sw_wr_cus">
+                        <div class="swiper-slide">
+                            <div class="swiper img_in_swiper">
+                                <div class="swiper-wrapper sw_wr_cus">
+                                    <div class="swiper-slide img_in_slide">
+                                        <div class="proj_slide_card">
+                                            <div class="projects_bx container">
+                                                <span class="bx_span">Старт продаж</span>
+                                            </div>
+                                            <img src="assets/img/prod-img2.png" alt="" class="slide_card_img">
+                                            <div class="prod_bx_wrap">
+                                                <h2 class="prodi_bx_title">Andres residences the bay</h2>
+                                                <span class="prod_bx_wrap_span">10 минут до центра Дубая <img
+                                                        src="assets/img/prod-car.svg" alt=""></span>
+                                                <span class="prod_bx_wrap_span">От 300.000$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide img_in_slide">
+                                        <div class="proj_slide_card">
+                                            <div class="projects_bx container">
+                                                <span class="bx_span">Старт продаж</span>
+                                            </div>
+                                            <img src="assets/img/prod-img2.png" alt="" class="slide_card_img">
+                                            <div class="prod_bx_wrap">
+                                                <h2 class="prodi_bx_title">Andres residences the bay</h2>
+                                                <span class="prod_bx_wrap_span">10 минут до центра Дубая <img
+                                                        src="assets/img/prod-car.svg" alt=""></span>
+                                                <span class="prod_bx_wrap_span">От 300.000$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide img_in_slide">
+                                        <div class="proj_slide_card">
+                                            <div class="projects_bx container">
+                                                <span class="bx_span">Старт продаж</span>
+                                            </div>
+                                            <img src="assets/img/prod-img2.png" alt="" class="slide_card_img">
+                                            <div class="prod_bx_wrap">
+                                                <h2 class="prodi_bx_title">Andres residences the bay</h2>
+                                                <span class="prod_bx_wrap_span">10 минут до центра Дубая <img
+                                                        src="assets/img/prod-car.svg" alt=""></span>
+                                                <span class="prod_bx_wrap_span">От 300.000$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper img_in_swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide img_in_slide">
+                                        <div class="proj_slide_card">
+                                            <div class="projects_bx container">
+                                                <span class="bx_span">Старт продаж</span>
+                                            </div>
+                                            <img src="assets/img/prod-img3.png" alt="" class="slide_card_img">
+                                            <div class="prod_bx_wrap">
+                                                <h2 class="prodi_bx_title">Beach isle</h2>
+                                                <span class="prod_bx_wrap_span">10 минут до центра Дубая <img
+                                                        src="assets/img/prod-car.svg" alt=""></span>
+                                                <span class="prod_bx_wrap_span">От 300.000$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide img_in_slide">
+                                        <div class="proj_slide_card">
+                                            <div class="projects_bx container">
+                                                <span class="bx_span">Старт продаж</span>
+                                            </div>
+                                            <img src="assets/img/prod-img3.png" alt="" class="slide_card_img">
+                                            <div class="prod_bx_wrap">
+                                                <h2 class="prodi_bx_title">Beach isle</h2>
+                                                <span class="prod_bx_wrap_span">10 минут до центра Дубая <img
+                                                        src="assets/img/prod-car.svg" alt=""></span>
+                                                <span class="prod_bx_wrap_span">От 300.000$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide img_in_slide">
+                                        <div class="proj_slide_card">
+                                            <div class="projects_bx container">
+                                                <span class="bx_span">Старт продаж</span>
+                                            </div>
+                                            <img src="assets/img/prod-img3.png" alt="" class="slide_card_img">
+                                            <div class="prod_bx_wrap">
+                                                <h2 class="prodi_bx_title">Beach isle</h2>
+                                                <span class="prod_bx_wrap_span">10 минут до центра Дубая <img
+                                                        src="assets/img/prod-car.svg" alt=""></span>
+                                                <span class="prod_bx_wrap_span">От 300.000$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper img_in_swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide img_in_slide">
+                                        <div class="proj_slide_card">
+                                            <div class="projects_bx container">
+                                                <span class="bx_span">Старт продаж</span>
+                                            </div>
+                                            <img src="assets/img/prod-img2.png" alt="" class="slide_card_img">
+                                            <div class="prod_bx_wrap">
+                                                <h2 class="prodi_bx_title">beach palace</h2>
+                                                <span class="prod_bx_wrap_span">10 минут до центра Дубая <img
+                                                        src="assets/img/prod-car.svg" alt=""></span>
+                                                <span class="prod_bx_wrap_span">От 300.000$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide img_in_slide">
+                                        <div class="proj_slide_card">
+                                            <div class="projects_bx container">
+                                                <span class="bx_span">Старт продаж</span>
+                                            </div>
+                                            <img src="assets/img/prod-img2.png" alt="" class="slide_card_img">
+                                            <div class="prod_bx_wrap">
+                                                <h2 class="prodi_bx_title">beach palace</h2>
+                                                <span class="prod_bx_wrap_span">10 минут до центра Дубая <img
+                                                        src="assets/img/prod-car.svg" alt=""></span>
+                                                <span class="prod_bx_wrap_span">От 300.000$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide img_in_slide">
+                                        <div class="proj_slide_card">
+                                            <div class="projects_bx container">
+                                                <span class="bx_span">Старт продаж</span>
+                                            </div>
+                                            <img src="assets/img/prod-img2.png" alt="" class="slide_card_img">
+                                            <div class="prod_bx_wrap">
+                                                <h2 class="prodi_bx_title">beach palace</h2>
+                                                <span class="prod_bx_wrap_span">10 минут до центра Дубая <img
+                                                        src="assets/img/prod-car.svg" alt=""></span>
+                                                <span class="prod_bx_wrap_span">От 300.000$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper img_in_swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide img_in_slide">
+                                        <div class="proj_slide_card">
+                                            <div class="projects_bx container">
+                                                <span class="bx_span">Старт продаж</span>
+                                            </div>
+                                            <img src="assets/img/prod-img3.png" alt="" class="slide_card_img">
+                                            <div class="prod_bx_wrap">
+                                                <h2 class="prodi_bx_title">Elie Saab</h2>
+                                                <span class="prod_bx_wrap_span">10 минут до центра Дубая <img
+                                                        src="assets/img/prod-car.svg" alt=""></span>
+                                                <span class="prod_bx_wrap_span">От 300.000$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide img_in_slide">
+                                        <div class="proj_slide_card">
+                                            <div class="projects_bx container">
+                                                <span class="bx_span">Старт продаж</span>
+                                            </div>
+                                            <img src="assets/img/prod-img3.png" alt="" class="slide_card_img">
+                                            <div class="prod_bx_wrap">
+                                                <h2 class="prodi_bx_title">Elie Saab</h2>
+                                                <span class="prod_bx_wrap_span">10 минут до центра Дубая <img
+                                                        src="assets/img/prod-car.svg" alt=""></span>
+                                                <span class="prod_bx_wrap_span">От 300.000$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide img_in_slide">
+                                        <div class="proj_slide_card">
+                                            <div class="projects_bx container">
+                                                <span class="bx_span">Старт продаж</span>
+                                            </div>
+                                            <img src="assets/img/prod-img3.png" alt="" class="slide_card_img">
+                                            <div class="prod_bx_wrap">
+                                                <h2 class="prodi_bx_title">Elie Saab</h2>
+                                                <span class="prod_bx_wrap_span">10 минут до центра Дубая <img
+                                                        src="assets/img/prod-car.svg" alt=""></span>
+                                                <span class="prod_bx_wrap_span">От 300.000$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper img_in_swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide img_in_slide">
+                                        <div class="proj_slide_card">
+                                            <div class="projects_bx container">
+                                                <span class="bx_span">Старт продаж</span>
+                                            </div>
+                                            <img src="assets/img/prod-img4.png" alt="" class="slide_card_img">
+                                            <div class="prod_bx_wrap">
+                                                <div class="prodi_bx_title">Damac Bay</div>
+                                                <span class="prod_bx_wrap_span">10 минут до центра Дубая <img
+                                                        src="assets/img/prod-car.svg" alt=""></span>
+                                                <span class="prod_bx_wrap_span">От 300.000$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide img_in_slide">
+                                        <div class="proj_slide_card">
+                                            <div class="projects_bx container">
+                                                <span class="bx_span">Старт продаж</span>
+                                            </div>
+                                            <img src="assets/img/prod-img4.png" alt="" class="slide_card_img">
+                                            <div class="prod_bx_wrap">
+                                                <div class="prodi_bx_title">Damac Bay</div>
+                                                <span class="prod_bx_wrap_span">10 минут до центра Дубая <img
+                                                        src="assets/img/prod-car.svg" alt=""></span>
+                                                <span class="prod_bx_wrap_span">От 300.000$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide img_in_slide">
+                                        <div class="proj_slide_card">
+                                            <div class="projects_bx container">
+                                                <span class="bx_span">Старт продаж</span>
+                                            </div>
+                                            <img src="assets/img/prod-img4.png" alt="" class="slide_card_img">
+                                            <div class="prod_bx_wrap">
+                                                <div class="prodi_bx_title">Damac Bay</div>
+                                                <span class="prod_bx_wrap_span">10 минут до центра Дубая <img
+                                                        src="assets/img/prod-car.svg" alt=""></span>
+                                                <span class="prod_bx_wrap_span">От 300.000$</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="choose_flat">
+            <section class="choose_flat">
+                <div class="flats container">
+                    <!--1-->
+                    <div class="flats_head">
+                        <h2 class="fh_title">
+                            Выберите квартиру
+                        </h2>
+                        <div class="fh_tabs"></div>
+                    </div>
+                    <!--2-->
+                    <div class="flats_context">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                        scrambled it to make an unknown printer took a galley of type and scrambled it to make
+                    </div>
+                    <!--3-->
+                    <div class="flats_mid">
+                        <!--3.1-->
+                        <div class="fm_l">
+                            <!--3.1.1-->
+                            <div class="fm_filter">
+                                <div class="fmf_inp">
+                                    Количество
+                                </div>
+                                <div class="fmf_rooms">
+                                    <div class="fmf_room">1</div>
+                                    <div class="fmf_room">2</div>
+                                    <div class="fmf_room">3</div>
+                                    <div class="fmf_room">4</div>
+                                    <div class="fmf_room">5</div>
+                                </div>
+                            </div>
+                            <!--3.1.2-->
+                            <div class="fm_total">
+                                <span>0</span> квартир
+                            </div>
+                            <!--3.1.3-->
+                            <div class="fm_list">
+                                <div class="fm_inn_list">
+                                </div>
+                            </div>
+                            <!--3.1.4-->
+                            <div class="fm_btns">
+                                <div class="fm_btn">Оставить заявку</div>
+                            </div>
+                        </div>
+                        <!--3.2-->
+                        <div class="fm_r noone">
+                            <!--3.2.1-->
+                            <div class="mr_head">
+                                <div class="mrh_total">
+                                    <span class="mrht_now">0</span>/<span class="mrht_all">0</span>
+                                </div>
+                                <div class="mrh_akciya">
+                                    -
+                                </div>
+                            </div>
+                            <!--3.2.2-->
+                            <div class="mr_img">
+                                <img src="/test.png" alt="test.png"/>
+                            </div>
+                            <!--3.2.3-->
+                            <div class="mr_datas">
+                                <div class="mr_data_col">
+                                    <div class="mr_dc_title">Проект</div>
+                                    <div class="mr_dc_val">andres residences the bay</div>
+                                </div>
+                                <div class="mr_data_col">
+                                    <div class="mr_dc_title">Площадь</div>
+                                    <div class="mr_dc_val">57,3 m2</div>
+                                </div>
+                                <div class="mr_data_col">
+                                    <div class="mr_dc_title">Этаж</div>
+                                    <div class="mr_dc_val">1</div>
+                                </div>
+                                <div class="mr_data_col">
+                                    <div class="mr_dc_title">Комнат</div>
+                                    <div class="mr_dc_val">1</div>
+                                </div>
+                                <div class="mr_data_col">
+                                    <div class="mr_dc_title">Стоимость</div>
+                                    <div class="mr_dc_val">от AED 350 000 000</div>
+                                </div>
+                                <div class="mr_data_col">
+                                    <div class="mr_dc_title">В ипотеку</div>
+                                    <div class="mr_dc_val">от AED 350 000 000</div>
+                                </div>
+                            </div>
+                            <!--3.2.4-->
+                            <div class="noone_text">Выберите план в левом блоке,<br>чтобы увидеть подробную информацию</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="vid">
+            <div class="vid_wrap container">
+                <div class="why_we_bx">
+                    <div class="whywe_wrap_card vid_card">
+                        <div>
+                            <h3 class="whywe_wrap_card_title">Высокая оценка капитала</h3>
+                            <img class="whywe_wrap_card_img" src="assets/img/whywe1.svg" alt="">
+                        </div>
+                        <p class="whywe_wrap_card_desc">Последние отчеты Knight Frank показывают, что в апреле 2022 года
+                            стоимость элитного жилья в Дубае выросла на 59%.</p>
+                    </div>
+                    <div class="whywe_wrap_card vid_card">
+                        <div>
+                            <h3 class="whywe_wrap_card_title">Высокая оценка капитала</h3>
+                            <img class="whywe_wrap_card_img" src="assets/img/whywe1.svg" alt="">
+                        </div>
+                        <p class="whywe_wrap_card_desc">Последние отчеты Knight Frank показывают, что в апреле 2022 года
+                            стоимость элитного жилья в Дубае выросла на 59%.</p>
+                    </div>
+                    <div class="whywe_wrap_card vid_card">
+                        <div>
+                            <h3 class="whywe_wrap_card_title">Высокая оценка капитала</h3>
+                            <img class="whywe_wrap_card_img" src="assets/img/whywe1.svg" alt="">
+                        </div>
+                        <p class="whywe_wrap_card_desc">Последние отчеты Knight Frank показывают, что в апреле 2022 года
+                            стоимость элитного жилья в Дубае выросла на 59%.</p>
+                    </div>
+                </div>
+                <div class="flex_vid">
+                    <div class="vid_card_inp">
+                        <select class="inp_sel" name="main" id="main" aria-required="true">
+                            <option class="inp_opt" data-atr="andres" value="one" selected="selected">andres residences the bay</option>
+                            <option class="inp_opt" data-atr="beach" value="two">beach isle</option>
+                            <option class="inp_opt" data-atr="plase" value="three">beach palace</option>
+                            <option class="inp_opt" data-atr="Damac" value="four">Damac Bay</option>
+                            <option class="inp_opt" data-atr="Eite" value="five">Elle saab</option>
+                        </select>
+                        <div onclick="showZapis(this)" class="vid_card_btn">Оставить Заявку</div>
+                    </div>
+                    <div class="video_wrap hide one">
+                        <iframe width="900" height="506" src="https://www.youtube.com/embed/z_AQ-jdNamE" title="Address Residences The Bay | Dubai&#39;s newest coastal haven, luxurious seaside life awaits" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="video_wrap hide two">
+                        <iframe width="900" height="506" src="https://www.youtube.com/embed/Cxk9wY_JcO4" title="МИХАИЛ КРУГ - ВСЕ ХИТЫ КОРОЛЯ РУССКОГО ШАНСОНА | ЛУЧШИЕ ПЕСНИ РЕМАСТЕРИНГ | 60 Лет Юбилейный Альбом" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="video_wrap hide three">
+                        <iframe width="900" height="506" src="https://www.youtube.com/embed/f56hIPNmwKg" title="Beach Palace All Inclusive Resort Cancun | An In Depth Look Inside" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="video_wrap hide four">
+                        <iframe width="900" height="506" src="https://www.youtube.com/embed/Zq6n0f52Vag" title="The Launch of DAMAC Bay by Cavalli" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="video_wrap hide five">
+                        <iframe width="900" height="506" src="https://www.youtube.com/embed/6rIYgPzEROo" title="Михаил Шуфутинский -  Лучшие Песни" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="offer container">
+            <div class="offer_wrap td_off_wr">
+                <h3 class="offer_wrap_title">Специальное предложение</h3>
+                <p class="offer_wrap_desc">Организуем встречу просмотр, экскурсию по любому из жилых комплексов
+                    бесплатно, организуем встречу в аэропорту</p>
+                <div onclick="showZapis(this)" class="offer_wrap_link">Оставить заявку</div>
+                <img class="offer_wrap_img" src="assets/img/special-off.png" alt="">
+            </div>
+        </section>
+        <section class="life-with">
+            <div class="life_wrap container">
+                <h2 class="life_title">Жить вместе с «DEJAVU»</h2>
+                <div class="life_grid">
+                        <img class="life_grid_img" src="assets/img/dejavu.png" alt="">
+                        <div class="life_grid_inner">
+                        <img class="life_grid_img" src="assets/img/dejavu1.png" alt="">
+                        <img class="life_grid_img" src="assets/img/dejavu2.png" alt="">
+                        <img class="life_grid_img" src="assets/img/dejavu3.png" alt="">
+                        <img class="life_grid_img kol" src="assets/img/dejavu4.png" alt="">
+                        <img class="life_grid_img kol" src="assets/img/dejavu5.png" alt="">
+                        </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="foot_ft_alo container">
+            <div class="footer_wrap container">
+                <a href="" class="footer_logo"><img src="assets/img/header-logo.png" alt=""></a>
+                <ul class="footer_list">
+                    <li class="footer_item"><a href="" class="footer_link">Andres residences the bay</a></li>
+                    <li class="footer_item"><a href="" class="footer_link">Beach isle</a></li>
+                    <li class="footer_item"><a href="" class="footer_link">beach palace</a></li>
+                    <li class="footer_item"><a href="" class="footer_link">Elie Saab</a></li>
+                    <li class="footer_item"><a href="" class="footer_link">Damac Bay</a></li>
+                </ul>
+                <div class="footer_soc_wr">
+                    <div class="foot_wk">
+                        <a href="tel:+998999999999" class="footer_soc_tel">+998 ( 99 ) 999-99-99</a>
+                        <a href="tel:+998999999999" class="footer_soc_tel">+998 ( 99 ) 999-99-99</a>
+                    </div>
+                    <div class="footer_soc_links">
+                        <a href="" class="foot_soc_item"><img src="assets/img/telegram.png" alt=""></a>
+                        <a href="" class="foot_soc_item"><img src="assets/img/facebook.png" alt=""></a>
+                        <a href="" class="foot_soc_item"><img src="assets/img/insta.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <img class="ft_soc_label" src="assets/img/webnow.png" alt="">
+        </div>
+    </footer>
+
+    <script src="assets/scripts/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/scripts/projects.js"></script>
+    <script src="assets/scripts/script.js"></script>
+</body>
+
+</html>
